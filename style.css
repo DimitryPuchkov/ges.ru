@@ -1,0 +1,522 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0; /* обнуляем отступы и убираем бордюры */
+    vertical-align: baseline; /* приводим все к одной базовой линии */
+    background: transparent; /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+    font-size: 100%; /* размер шрифта всем одинаковый */
+}
+
+a { /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    outline: none;
+}
+
+table { /* устраняем отступы между ячейками таблицы */
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, td img {
+    vertical-align: top; /* возвращаем привычное вертикальное выравнивание */
+}
+
+input, select, button, textarea {
+    margin: 0; /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+    font-size: 100%; /* делаем размер шрифтов везде одинаковым */
+    outline: none;
+}
+
+input[type="text"], input[type="password"], textarea {
+    padding: 0; /* убираем внутренние отступы для текстовых полей */
+}
+
+input[type="checkbox"] { /* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+    vertical-align: bottom;
+}
+
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+@font-face {
+    font-family: "arial"
+    src: url(fonts/arial.ttf);
+
+}
+
+@font-face {
+    font-family: "Times New Roman"
+    src: url(fonts/times.ttf);
+}
+
+body {
+    background: #fff;
+    font-family: "Times New Roman";
+
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    background: url(img/headerbg.jpg) center center no-repeat;
+    width: 100%;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 160px;
+    margin: 0 auto;
+    font-family: arial;
+
+}
+
+nav ul {
+    float: right;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+
+}
+
+nav ul li p.animation {
+    color: #ffffff;
+    font-family: arial;
+    text-decoration: none;
+    font-size: 14px;
+    /*transition*/
+    -webkit-transition: 1s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+
+}
+
+nav ul li p.animation:hover {
+    color: #fff;
+    text-shadow: 0px 0px 35px #fff;
+}
+
+header h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 100px auto;
+    font-size: 75px;
+
+}
+
+
+header input {
+    display: block;
+
+    background: #fed136;
+    color: #ffffff;
+    border-radius: 2px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    width: 240px;
+    height: 65px;
+    padding: 20 auto;
+    border: 0;
+
+}
+
+.services {
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.services h1 {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #222222;
+
+
+}
+
+.services p {
+    color: #777777;
+    font-size: 16px;
+
+}
+
+.structure {
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.structure h1 {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #222222;
+}
+
+.structure img {
+    border-radius: 1%;
+    margin-bottom: 40px;
+}
+
+.legend {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.legobj {
+    width: 24%;
+    height: 150px;
+}
+
+.obj {
+
+    float: left;
+    width: 33%;
+    padding: 1px;
+}
+
+.portfolio {
+    width: 100%;
+    margin: 200px auto;
+}
+
+
+.portfolio h1 {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 40px;
+    color: #222222;
+    margin-bottom: 40px;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+
+
+}
+
+
+.portfolio p {
+    color: #777777;
+    font-size: 16px;
+
+}
+
+.portfolio {
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.obj2 {
+
+    float: left;
+    width: 33%;
+    padding: 1px;
+    margin-bottom: 80px;
+}
+
+.obj2 img {
+    width: 240px;
+    height: 180px;
+    border-radius: 2%;
+}
+
+
+.about {
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+    margin-bottom: 30px;
+    display: block;
+    /*vertical-align: middle;*/
+
+}
+
+.about h1 {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 40px;
+    color: #222222;
+
+
+}
+
+.about p {
+    color: #777777;
+    font-size: 16px;
+    margin-bottom: 70px;
+
+}
+
+.obj3 {
+
+    float: left;
+    width: 33%;
+    height: 200px;
+    padding: 1px;
+    margin-bottom: 80px;
+    /*vertical-align: middle;*/
+
+}
+
+.obj3 h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+.team {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.team h1 {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #222222;
+
+
+}
+
+.team p {
+    color: #777777;
+    font-size: 16px;
+    margin-bottom: 70px;
+
+}
+
+.litra {
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.litra h1 {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #222222;
+}
+
+.litra p {
+    font-size: 20px;
+}
+
+.litra span {
+    font-size: 16px;
+    text-align: right;
+}
+
+.profil {
+
+    float: left;
+    width: 33%;
+    height: 200px;
+    padding: 1px;
+    margin-bottom: 60px;
+}
+
+
+.imgsite {
+    margin: 60px 30px 120px 30px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-family: arial;
+    color: #555555;
+
+
+}
+
+.contact {
+    background: #252628 url(img/footermap.jpg) no-repeat;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-right: 12.5%;
+    padding-left: 12.5%;
+    text-align: center;
+
+    font-size: 14px;
+}
+
+.clearfix {
+    width: 100%;
+
+
+}
+
+.left {
+    width: 50%;
+    float: left;
+    display: block;
+    height: 241px;
+
+
+}
+
+.left input {
+    display: block;
+    margin-bottom: 30px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 16px;
+    border-radius: 5px;
+    border: 0;
+
+}
+
+.left textarea {
+    height: 176px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 16px;
+    font-family: arial;
+    color: #000;
+    border: 0;
+
+}
+
+.otpravka {
+    display: block;
+    width: 100%;
+
+
+}
+
+.otpravka input {
+    width: 240px;
+    height: 65px;
+    border: 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #fed136;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.copy {
+    margin: 10px 0;
+
+}
+
+.copy a {
+    text-decoration: none;
+    color: #555555;
+}
+
+.phot {
+    margin: 0 auto;
+    width: 70%;
+    height: 200px;
+    /*border-radius: 2%;*/
+    /*background: #555;*/
+
+}
+
+.phot img {
+    border-radius: 2%;
+}
+
+.pod {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact h1 {
+    color: #fff;
+    font-size: 70px;
+}
+
+#toTop {
+    width: 75px;
+    height: 75px;
+    background: rgba(0, 0, 0, 40);
+    opacity: 0.8;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px; /* отступ кнопки от нижнего края страницы*/
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: #333;
+    font-family: verdana;
+    font-size: 11px;
+}
+
+#toTop:hover{
+    background: rgba(50, 0, 0, 40);
+}
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    margin: auto;
+
+
+}
+
+#img {
+    margin-top: 50px;
+}

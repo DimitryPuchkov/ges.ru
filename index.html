@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Golden</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="gallery.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            $(window).scroll(function () {
+
+                if ($(this).scrollTop() != 0) {
+
+                    $('#toTop').fadeIn();
+
+                } else {
+
+                    $('#toTop').fadeOut();
+
+                }
+
+            });
+
+            $('#toTop').click(function () {
+
+                $('body,html').animate({scrollTop: 0}, 800);
+
+            });
+
+        });
+        $(function () {
+            $("#guarant").click(function () {
+                $('html,body').animate({
+                    scrollTop: $('#guarant1').offset().top
+                }, 800);
+            });
+            $("#fact").click(function () {
+                $('html,body').animate({
+                    scrollTop: $('#fact1').offset().top
+                }, 800);
+            });
+            $("#gall").click(function () {
+                $('html,body').animate({
+                    scrollTop: $('#gall1').offset().top
+                }, 800);
+            });
+            $("#command").click(function () {
+                $('html,body').animate({
+                    scrollTop: $('#command1').offset().top
+                }, 800);
+            });
+            $("#struct").click(function () {
+                $('html,body').animate({
+                    scrollTop: $('#struct1').offset().top
+                }, 800);
+            });
+            $("#guarant").click(function () {
+                $('html,body').animate({
+                    scrollTop: $('#guarant1').offset().top
+                }, 800);
+            });
+        });
+    </script>
+</head>
+<body id="bd">
+<div id="toTop">
+    <img src="img/totop.png" alt="Наверх" width="75px" height="75px">
+</div>
+<header><!-- Фоновая картинка задана в css, размер 1400 на 881-->
+    <nav>
+        <ul>
+            <li><p id="guarant" class="animation">ГАРАНТИИ</p></li>
+            <li><p id="struct" class="animation">УСТРОЙСТВО</p></li>
+            <li><p id="fact" class="animation">ФАКТЫ</p></li>
+            <li><p id="gall" class="animation">ГАЛЕРЕЯ</p></li>
+            <li><p id="command" class="animation"> РУКОВОДСТВО</p></li>
+        </ul>
+    </nav>
+
+    <!-- <h3>Welcome To Our Studio!</h3> -->
+    <h1>Иркутская ГЭС</h1>
+    <!-- <input type="button" value="TELL ME MORE"> -->
+</header>
+<div class="wrapper">
+    <div class="services">
+        <a name="1garant" id="guarant1"></a>
+        <h1>Гарантии</h1>
+        <div class="obj">
+            <img src="img/objicon1.png" alt="">
+            <h4>Дёшево</h4>
+            <p>Самая доступная электроэнергия<br>в России — в Иркутской области</p>
+        </div>
+        <div class="obj">
+            <img src="img/objicon3.png" alt="">
+            <h4>Стабильно</h4>
+            <p>Бесперебойная круглогодичная<br>выработка электроэнергии</p>
+        </div>
+        <div class="obj">
+            <img src="img/objicon2.png" alt="">
+            <h4>Прочно</h4>
+            <p>Устойчивость к землетрясениям<br>до 9 баллов</p>
+        </div>
+
+    </div>
+    <div class="structure">
+        <a name="1struct" id="struct1"></a>
+        <h1>Устройство ГЭС</h1>
+        <img src="img/structure.png" alt="">
+        <div class="legend">
+            <div class="legobj">
+                <h3>1 МОСТОВЫЕ КРАНЫ</h3>
+                <p>Поднимают и опускают затворы и сороудерживающие решётки</p>
+            </div>
+            <div class="legobj">
+                <h3>2 ЗАТВОРЫ ГИДРОАГРЕГАТОВ</h3>
+                <p>В зависимости от положения пропускают или ограничивают пропуск воды к гидроагрегату</p>
+            </div>
+            <div class="legobj">
+                <h3>3 СОРОУДЕРЖИВАЮЩИЕ РЕШЁТКИ</h3>
+                <p>Пропускают воду, но препятствуют проникновению мусора к гидроагрегату </p>
+            </div>
+            <div class="legobj">
+                <h3>4 ТУРБИНА ГИДРОАГРЕГАТА</h3>
+                <p>Лопасти турбины вращаются текущей водой, за счёт чего вырабытывается механическая энергия</p>
+            </div>
+        </div>
+        <div class="legend">
+            <div class="legobj">
+                <h3>5 ГИДРОГЕНЕРАТОР</h3>
+                <p>Приводится в действие турбиной, преобразовывает механическую энергию вращения в электрическую</p>
+            </div>
+            <div class="legobj">
+                <h3>6 ТРАНСФОРМАТОР</h3>
+                <p>Преобразовывает ток, полученный от гидрогенератора, для передачи его по линиям к потребителям</p>
+            </div>
+            <div class="legobj">
+                <h3>7 МОСТОВЫЕ КРАНЫ НА ПЛОТИНЕ</h3>
+                <p>Служат для управления затворами холостых сбросов воды из водохранилища в реку</p>
+            </div>
+            <div class="legobj">
+                <h3>8 ЗАТВОРЫ ПЛОТИНЫ</h3>
+                <p>Регулируют уровень воды в Иркутском водохранилище. Уровень понижается за счёт холостых сбросов</p>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <a name="1fackt" id="fact1"></a>
+        <h1>Некоторые факты о плотине ГЭС</h1>
+        <!-- Здесь нужны круглые фото размер183х183, названия abpic1.png и так далее увеличивая цифру на 1-->
+        <p></p>
+        <div class="obj3">
+
+            <h4> Первая
+            </h4>
+            <p>
+                Строительство Иркутской ГЭС было поистине масштабным и важным. Оно заложило основы для развития не
+                только электроэнергетики области, но и промышленности. С её появлением жизнь в городе закипела и
+                забурлила. Станция носила и продолжает носить гордое звание первой ГЭС в Сибири.
+            </p>
+        </div>
+        <div class="obj3">
+            <img src="img/abpic1.png" alt="" id="i1">
+
+        </div>
+        <div class="obj3">
+        </div>
+        <div class="obj3">
+        </div>
+        <div class="obj3">
+            <img src="img/abpic2.png" alt="" id="i2">
+        </div>
+        <div class="obj3">
+            <h4>
+                О надёжности
+
+            </h4>
+            <p>
+                Согласно завлениям специалистов по авиационному вооружению, Иркутская гидроэлектростанция должна
+                выдержать гидравлический удар возникающий после попадания 5-ти тонной авиабомбы в водохранилище
+            </p>
+
+        </div>
+        <div class="obj3">
+
+            <h4>
+                Последствия строительства
+            </h4>
+            <p>Иркутское водохранилище заполнялось в течение семи лет и затопило участок Ангары от истока до створа
+                Иркутской ГЭС, а также повысило уровень Байкала, по разным данным, на 0,8—1,2 м (что вызвало затопление
+                и подтопление свыше 550 км² земель по берегам озера).
+            </p>
+        </div>
+        <div class="obj3">
+            <img src="img/abpic3.png" alt="" id="i3">
+        </div>
+        <div class="obj3">
+        </div>
+
+        <div class="obj3">
+        </div>
+        <div class="obj3">
+            <img src="img/abpic4.png" alt="" id="i4">
+        </div>
+        <div class="obj3">
+            <h4>
+                Проран
+            </h4>
+            <p>
+                В начале 50-х годов, при проектировании ГЭС, инженеры Гидропроекта предлагали для повышения мощности
+                всех гидроэлектростанций Ангарского каскада направленным взрывом создать проран в истоке Ангары. Но по
+                просьбе
+                общественности он не был создан
+
+            </p>
+
+
+        </div>
+
+    </div>
+    <div class="portfolio">
+        <a name="1galler" id="gall1"></a>
+        <h1>Галерея фотографий</h1>
+        <div class="obj2">
+            <img src="img/portfolioimg1.jpg" onClick="levaya(0);">
+
+        </div>
+        <div class="obj2">
+            <img src="img/portfolioimg2.jpg" onClick="levaya(1);">
+
+        </div>
+        <div class="obj2">
+            <img src="img/portfolioimg3.jpg" onClick="levaya(2);">
+
+        </div>
+        <div class="obj2">
+            <img src="img/portfolioimg4.jpg" onClick="levaya(3);">
+
+        </div>
+        <div class="obj2">
+            <img src="img/portfolioimg5.jpg" onClick="levaya(4);">
+
+        </div>
+        <div class="obj2">
+            <img src="img/portfolioimg6.jpg" onClick="levaya(5);">
+
+        </div>
+        <div class="gallery" id="gallery">
+
+            <img src="" width="640" height="480" id="img"> <br>
+            <img src="img/left_arrow.png" width="50" height="50" onClick="left_arrow();">
+            <img src="img/right_arrow.png" width="50" height="50" onClick="right_arrow();">
+            <img src="img/close.png" width="50" height="50" onClick="pravaya();">
+
+
+        </div>
+    </div>
+    <div class="team">
+        <a name="1comander" id="command1"></a>
+        <h1>Руководство ГЭС</h1>
+        <!-- <p>Proin iaculis purus consequat sem cure. </p> -->
+        <div class="profil">
+            <div class="phot">
+                <img src="img/team1.jpg" alt="">
+            </div>
+            <h4>Иван Николаевич Алдошин</h4>
+            <p>Директор Иркутской ГЭС</p>
+            <!-- <img src="img/twit.png" alt="">
+            <img src="img/fbook.png" alt="">
+            <img src="img/printer.png" alt=""> -->
+        </div>
+        <div class="profil">
+            <div class="phot">
+                <img src="img/team3.jpg" alt="">
+            </div>
+            <h4>Сергей Анатольевич Дергалёв</h4>
+            <p>Заместитель главного инженера по производству</p>
+            <!-- <img src="img/twit.png" alt="">
+            <img src="img/fbook.png" alt="">
+            <img src="img/google.png" alt=""> -->
+        </div>
+        <div class="profil">
+            <div class="phot">
+                <img src="img/team2.JPG" alt="">
+            </div>
+            <h4>Антон Вадимович Ситнев</h4>
+            <p>Начальник смены станции</p>
+            <!-- <img src="img/fbook.png" alt="">
+            <img src="img/printer.png" alt=""> -->
+
+        </div>
+        <br>
+        <br><br>
+        <p id="devis">
+
+        </p>
+        <!--<img src="img/evanto.png" alt="" class="imgsite">
+        <img src="img/wordpress.png" alt="" class="imgsite">
+        <img src="img/tuts.png" alt="" class="imgsite">
+        <img src="img/microc.jpg" alt="" class="imgsite">-->
+    </div>
+</div>
+
+<div class="litra">
+    <h1>Иркутской ГЭС посвящается</h1>
+    <p>
+        Ангара <br>
+
+        Не Саяны вздыбились <br>
+
+        За горой гора, <br>
+
+        Укачалась в зыбких <br>
+
+        Волнах Ангара, <br>
+
+        Чтоб от ГЭС бетонной <br>
+
+        До реки Иды <br>
+
+        В цвет <br>
+
+        Растений донных
+        <br>
+        Красить глубь воды. <br>
+
+
+        И течет зеленая <br>
+
+        В горечи разлук,
+        <br>
+        С юных лет Влюбленная
+        <br>
+        В крики стылых вьюг,
+        <br>
+        Что в снегу,
+        <br>
+        Как в вате,
+        <br>
+        Прячась до весны,
+        <br>
+        Будут навевать мне
+        <br>
+        Сказочные сны. <br><br><br><br>
+        <span>Соколов В. П.</span>
+    </p>
+
+</div>
+<footer>
+    <div class="contact">
+        <h1>НАПИШИТЕ НАМ</h1>
+        <p class="pod">
+            о своих пожеланиях по улучшению сайта
+        </p>
+        <form action="">
+            <div class="clerfix">
+                <div class="left">
+                    <input type="text" placeholder="YOUR NAME*">
+                    <input type="email" placeholder="YOUR EMAIL*">
+                    <input type="text" placeholder="SUBJECT">
+                </div>
+                <div class="left">
+							<textarea placeholder
+                                              ="YOUR MESSAGE*">
+
+							</textarea>
+                </div>
+
+            </div>
+            <div class="otpravka">
+                <input type="submit" value="ОТПРАВИТЬ">
+            </div>
+
+        </form>
+    </div>
+
+</footer>
+
+</body>
+</html>
+<!--
+
+
+
